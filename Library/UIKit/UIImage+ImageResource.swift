@@ -11,7 +11,7 @@ import UIKit
 
 public extension UIImage {
 
-  #if os(iOS) || os(tvOS)
+  #if os(iOS) || os(tvOS) || (swift(>=5.9) && os(visionOS))
   /**
    Returns the image from this resource (R.image.*) that is compatible with the trait collection.
 
