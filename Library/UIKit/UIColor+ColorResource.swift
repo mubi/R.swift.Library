@@ -13,7 +13,7 @@ import UIKit
 @available(tvOS 11.0, *)
 public extension UIColor {
 
-  #if os(iOS) || os(tvOS)
+  #if os(iOS) || os(tvOS) || (swift(>=5.9) && os(visionOS))
   /**
    Returns the color from this resource (R.color.*) that is compatible with the trait collection.
 
